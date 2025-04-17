@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",               // Asegúrate de que los archivos se generen en la carpeta dist
+    "rootDir": "./",                  // Todos los archivos fuente estarán en la raíz del proyecto
+    "declaration": true
+  },
+  "include": [
+    "./*.ts"                          // Incluye todos los archivos .ts en la raíz
+  ],
+  "exclude": [
+    "node_modules",                    // Excluye node_modules
+    "dist",                            // Excluye el directorio dist
+    "**/*.spec.ts"                     // Excluye los archivos de prueba
+  ]
+}

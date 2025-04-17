@@ -1,0 +1,123 @@
+{
+  "Declaración de Qubit": {
+    "prefix": "qubit",
+    "body": ["Qubit ${1:qubit};"],
+    "description": "Declara un nuevo qubit individual en QLang"
+  },
+  "Declaración de Registro Cuántico": {
+    "prefix": "register",
+    "body": ["Register ${1:regName}[${2:n}];"],
+    "description": "Declara un registro cuántico de n qubits"
+  },
+  "Declaración de Circuito": {
+    "prefix": "circuit",
+    "body": ["Circuit ${1:circuitName} {", "  ${2:// operaciones cuánticas}", "}"],
+    "description": "Define un nuevo circuito cuántico"
+  },
+  "Medición Cuántica": {
+    "prefix": "measure",
+    "body": ["Measure(${1:qubit});"],
+    "description": "Ejecuta una medición sobre un qubit"
+  },
+  "Compuerta Hadamard (H)": {
+    "prefix": "H",
+    "body": ["H(${1:qubit});"],
+    "description": "Aplica la compuerta Hadamard al qubit especificado"
+  },
+  "Compuerta Pauli-X (X)": {
+    "prefix": "X",
+    "body": ["X(${1:qubit});"],
+    "description": "Aplica la compuerta Pauli-X (NOT cuántico)"
+  },
+  "Compuerta Pauli-Y (Y)": {
+    "prefix": "Y",
+    "body": ["Y(${1:qubit});"],
+    "description": "Aplica la compuerta Pauli-Y"
+  },
+  "Compuerta Pauli-Z (Z)": {
+    "prefix": "Z",
+    "body": ["Z(${1:qubit});"],
+    "description": "Aplica la compuerta Pauli-Z"
+  },
+  "Compuerta de Fase (S)": {
+    "prefix": "S",
+    "body": ["S(${1:qubit});"],
+    "description": "Aplica la compuerta de fase S"
+  },
+  "Compuerta T (T)": {
+    "prefix": "T",
+    "body": ["T(${1:qubit});"],
+    "description": "Aplica la compuerta T (raíz de la fase Z)"
+  },
+  "Rotación en X (RX)": {
+    "prefix": "RX",
+    "body": ["RX(${1:qubit}, ${2:angle});"],
+    "description": "Aplica una rotación alrededor del eje X con un ángulo específico"
+  },
+  "Rotación en Z (RZ)": {
+    "prefix": "RZ",
+    "body": ["RZ(${1:qubit}, ${2:angle});"],
+    "description": "Aplica una rotación alrededor del eje Z"
+  },
+  "Compuerta Control-X (CX)": {
+    "prefix": "CX",
+    "body": ["CX(${1:control}, ${2:target});"],
+    "description": "Aplica una compuerta Control-X (entrelazamiento de dos qubits)"
+  },
+  "Condicional If-Else": {
+    "prefix": "ifql",
+    "body": [
+      "if (${1:condition}) {",
+      "  ${2:// código cuando verdadero}",
+      "} else {",
+      "  ${3:// código alternativo}",
+      "}"
+    ],
+    "description": "Estructura condicional clásica tipo if-else"
+  },
+  "Bucle While": {
+    "prefix": "whileql",
+    "body": [
+      "while (${1:condition}) {",
+      "  ${2:// operaciones cuánticas dentro del bucle}",
+      "}"
+    ],
+    "description": "Estructura repetitiva while en QLang"
+  },
+  "Bucle For": {
+    "prefix": "forql",
+    "body": [
+      "for (${1:int i = 0}; ${2:i < N}; ${3:i++}) {",
+      "  ${4:// operaciones cuánticas en iteración}",
+      "}"
+    ],
+    "description": "Estructura repetitiva for"
+  },
+  "Función Personalizada": {
+    "prefix": "funcql",
+    "body": [
+      "function ${1:FunctionName}(${2:params}) {",
+      "  ${3:// operaciones o lógica}",
+      "}"
+    ],
+    "description": "Define una función personalizada en QLang"
+  },
+  "Inicializar Estado Entrelazado GHZ": {
+    "prefix": "ghz",
+    "body": [
+      "// Estado GHZ de 3 qubits",
+      "H(${1:q0});",
+      "CX(${1:q0}, ${2:q1});",
+      "CX(${1:q0}, ${3:q2});"
+    ],
+    "description": "Inicializa un estado entrelazado GHZ de 3 qubits"
+  },
+  "Aplicar Corrección de Errores Cuánticos (QEC)": {
+    "prefix": "qec",
+    "body": [
+      "// Aplicación de esquema de corrección de errores superficial",
+      "SurfaceCode(${1:qbit1}, ${2:qbit2}, ${3:qbit3});"
+    ],
+    "description": "Aplica un esquema de corrección de errores cuánticos (ej. código de superficie)"
+  }
+}

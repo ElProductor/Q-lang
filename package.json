@@ -1,0 +1,39 @@
+{
+  "name": "qlang-extension",
+  "version": "1.0.0",
+  "description": "QLang Syntax Highlighting Extension for VSCode",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "build": "tsc", 
+    "start": "code . && npm run build && node dist/extension.js",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vscode": "^1.1.37"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "qlang",
+        "extensions": [".qlg"],
+        "aliases": ["QLang"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "qlang",
+        "scopeName": "source.qlang",
+        "path": "./syntaxes/qlang.tmLanguage.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:qlang"
+  ],
+  "engines": {
+    "vscode": "^1.57.0"
+  }
+}

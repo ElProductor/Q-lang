@@ -1,0 +1,13 @@
+{
+  "qlang.simulator": "local-quantum-simulator",
+  "qlang.backend": "ibmq_qasm_simulator", // Alternativas: "ibmq_lima", "ibmq_belem", etc.
+  "qlang.showOutput": true,
+  "qlang.autoValidate": true,
+  "qlang.syntaxHighlighting": true,
+  "qlang.enableLinting": true,
+  "qlang.executionTimeout": 10000, // en milisegundos
+  "qlang.defaultQubitCount": 5,
+  "qlang.theme": "dark", // Opción adicional: "light"
+  "qlang.snippets.enabled": true,
+  "qlang.logging.level": "info" // Otros niveles: "warn", "error", "debug"
+}

@@ -1,0 +1,6 @@
+Qubit q1
+Qubit q2
+H(q1)
+CX(q1, q2)
+Measure(q1)
+Measure(q2)

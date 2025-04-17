@@ -1,0 +1,13 @@
+{
+  "scopeName": "source.qlg",
+  "patterns": [
+    { "match": "\\b(Qubit|SensorData|QuantumSensor|Measure|H|CX|QuantumMeasure|ClassicalCalculate|QuantumCalculate|StateChange)\\b", "name": "keyword.control.qlg" },
+    { "match": "\\b(if|else|while)\\b", "name": "keyword.control.flow.qlg" },
+    { "match": "\".*?\"", "name": "string.quoted.double.qlg" },
+    { "match": "\\b\\d+\\b", "name": "constant.numeric.qlg" }
+  ],
+  "repository": {},
+  "names": ["qlg"],
+  "fileTypes": ["qlg"],
+  "uuid": "12345678-qlg-lang"
+}
